@@ -1,0 +1,74 @@
+@import '../../style/mixin.scss';
+
+.order-container{
+	.order-name{
+		padding-top: 1.96rem;
+		font-size: 1.5rem;
+		padding-left: 0.5rem;
+	}
+	.order-list{
+		padding: 0.3rem;
+		margin-bottom: 2rem;
+		li{
+			display: flex;
+			flex-flow: row nowrap;
+			background-color: white;
+			margin-bottom: 0.5rem;
+			border-radius: 0.15rem;
+			padding: 0.5rem 0.3rem;
+			border-radius: 0.3rem;
+			.order-shop-img{
+				width: 20%;
+				img{
+					border-radius: 0.3rem;
+				}
+			}
+			.order-detail{
+				width: 80%;
+				.order-time{
+					border-bottom: 1px solid #eee;
+					line-height: 2;
+					font-size: 0.6rem;
+					color: #999;
+				}
+				.shop-name{
+					font-size: 0.9rem;
+					.name{
+						float: left;
+						font-weight: bold;
+						.to-shop{
+							font-weight: normal;
+							padding-left: 0.5rem;
+						}
+					}
+					.order-status{
+						float: right;
+						font-size: 0.6rem;
+					}
+				}
+				.food-desc{
+					font-size: 0.6rem;
+					line-height: 2.5;
+					.desc{
+						color: #999;
+						float: left;
+					}
+					.price{
+						float: right;
+					}
+				}
+				.food-more{
+					text-align: right;
+					padding: 0.4rem 0;
+					button{
+						border: 1px solid #3190e8;
+						background-color: white;
+						color: #3190e8;
+						padding: 0.3em 0.4em;
+						border-radius: 0.3em;
+					}
+				}
+			}
+		}
+	}
+}

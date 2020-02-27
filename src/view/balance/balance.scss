@@ -1,0 +1,77 @@
+@import '../../style/mixin.scss';
+
+.prize-container{
+	padding-top: 1.96rem;
+	p, span{
+		font-family: Helvetica Neue,Tahoma,Arial;
+	}
+	.left-money-container{
+		padding: 0.3rem;
+		background-color: #3190e8;
+		.left-money {
+			padding: 0.4rem;
+			background-color: white;
+			border-radius: .15rem;
+			.title{
+				font-size: 0.55rem;
+				color: #666;
+			}
+			.money{
+				font-size: 1.8rem;
+				color: #333;
+				span{
+					font-size: 0.7rem;
+				}
+			}
+			.extract{
+				width: 100%;
+				height: 2rem;
+				font-size: .8rem;
+				color: #fff;
+				border-radius: .15rem;
+				line-height: 2rem;
+				margin-top: 1rem;
+				text-align: center;
+				background-color: #ccc;
+			}
+			.extract-activity{
+				background-color: #3190e8;
+			}
+		}
+	}
+	.trade-log-container{
+		padding: 0.3rem;
+		.title{
+			font-size: .6rem;
+		    color: #999;
+		    line-height: 2rem;
+		    padding-left: .5rem;
+		}
+		.empty-log-icon{
+			text-align: center;
+			margin-top: 2.2rem;
+			.iconfont{
+				font-size: 8rem;
+			}
+		}
+		.empty-log-tips{
+			text-align: center;
+		    margin-top: .5rem;
+		    font-size: 1.2rem;
+		    color: #666;
+		}
+		.log-list{
+			background-color: white;
+			ul{
+				padding: 0.3rem;
+				li{
+					display: flex;
+					flex-flow:  row nowrap;
+					justify-content: space-between;
+					border-bottom: 1px solid #eee;
+					line-height: 2;
+				}
+			}
+		}
+	}
+}

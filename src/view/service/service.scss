@@ -1,0 +1,61 @@
+@import '../../style/mixin.scss';
+
+.service-container{
+	padding-top: 1.96rem;
+	height: 7rem;
+	background-color: #3190e8;
+	.top-container{
+		display: flex;
+		flex-flow: row nowrap;
+		margin-bottom: 0.5rem;
+		.avatar{
+			width: 20%;
+			text-align: center;
+			color: white;
+			.icontfont{
+				font-size: 3rem;
+			}
+		}
+		.slogan{
+			width: 80%;
+		    line-height: 3;
+			color: white;
+			.sloganbg{
+				background-color: #0977de;
+				padding: 0.3rem;
+				position: relative;
+				z-index: 0;
+				border-radius: 0.2em;
+				font-size: 0.9rem;
+			}
+			.sloganbg::before{
+					content: '';
+					position: absolute;
+					border:0.4rem solid #0977de;
+					transform: rotate(45deg);
+					left: -0.4rem;
+					top: 0.4rem;
+					z-index: -1;
+				}
+		}
+	}
+	.question-list{
+		background-color: white;
+		margin: 0 0.5rem;
+		.title{
+			padding: 0.4rem;
+		}
+		.q-item{
+			border-bottom: 1px solid #eee;
+			line-height: 3;
+			padding: 0 0.3rem;
+			a{
+				display: block;
+				font-size: 0.8rem;
+				.arrow{
+					float: right;
+				}
+			}
+		}
+	}
+}

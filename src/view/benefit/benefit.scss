@@ -1,0 +1,86 @@
+@import '../../style/mixin.scss';
+
+.benefit-container{
+	.prize-container{
+		padding-top: 1.96rem;
+		p, span{
+			font-family: Helvetica Neue,Tahoma,Arial;
+		}
+		.left-money-container{
+			padding: 0.3rem;
+			background-color: #3190e8;
+			.switch-type{
+				display: flex;
+				flex-flow:  row nowrap;
+				justify-content: space-between;
+				align-items: center;
+				color:white;
+				div{
+					width: 50%;
+					text-align: center;
+					font-size: 1rem;
+				}
+			}
+		}
+		.trade-log-container{
+			padding: 0.3rem;
+			.empty-log-icon{
+				text-align: center;
+				margin-top: 2.2rem;
+				.iconfont{
+					font-size: 8rem;
+				}
+			}
+			.empty-log-tips{
+				text-align: center;
+			    margin-top: .5rem;
+			    font-size: 1.2rem;
+			    color: #666;
+			}
+			.log-list{
+				background-color: white;
+				ul{
+					padding: 0.3rem;
+					li{
+						display: flex;
+						flex-flow:  row nowrap;
+						justify-content: space-between;
+						align-items: center;
+						border-bottom: 1px solid #eee;
+						line-height: 1.5;
+						padding: 0.3rem 0;
+						.left{
+							font-size: 1.8rem;
+							width: 3rem;
+							flex-shrink: 0;
+							text-align: center;
+							color: red;
+							font-weight: bold;
+							.rmbsymbol{
+								font-size: 1rem
+							}
+						}
+						.middle{
+							.shopname{
+								font-weight: bold;
+							}
+							.use-tips{
+								font-size: 0.6rem;
+								color: #999;
+							}
+						}
+						.right{
+							.userit{
+								background-color: red;
+								color: white;
+								font-size: 0.6rem;
+								padding: 0.2em 0.4em;
+								border-radius: 0.3em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,167 @@
+@import '../../style/mixin.scss';
+
+@keyframes active{
+    from, 50%, 100% {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+      animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    }
+    0%{
+      transform: scale(1);
+    }
+    50%{
+      transform: scale(1.2);
+    }
+    100%{
+      transform: scale(1);
+    }
+}
+
+
+.shop-detail-container{
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	right: 0;
+	left: 0;
+	height: 100%;
+	.shop-detail-header{
+		position: relative;
+
+		.header-cover-img{
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 9;
+			height: 3.7rem;
+			filter: blur(10px);
+		}
+		.description-header{
+			position: relative;
+			z-index: 10;
+			background-color: rgba(119, 103, 137, .43);
+			padding: 0.4rem 0 0.4rem 0.4rem;
+			width: 100%;
+			overflow: hidden;
+			.description-top{
+				display: flex;
+				.description-left{
+					margin-left: 0.3rem;
+					img{
+						@include wh(2.9rem, 2.9rem);
+						display: block;
+						border-radius: 0.15rem;
+						margin-right: 0.2rem;
+					}
+				}
+				.description-right{
+					flex: 1;
+					.description-title{
+						@include font(.8rem, #fff);
+						font-weight: bold;
+						width: 100%;
+						margin-bottom: 0.3rem;
+					}
+					.description-text{
+						@include font(.5rem, #fff);
+						margin-bottom: 0.3rem;
+					}
+					.description-promotion{
+						@include font(.5rem, #fff);
+						width: 11.5rem;
+					}
+				}
+				.icon-arrow-right{
+					@include positionHCenter;
+					@include font(.9rem, #fff);
+					font-weight: bold;
+					right: 0.3rem;
+					z-index: 11;
+				}
+			}
+			.description-footer{
+				@include flex(space-between);
+				margin-top: 0.5rem;
+				padding-right: 0.3rem;
+				p{
+					@include font(.5rem, #fff);
+					.tip-icon{
+						padding: 0 0.04rem;
+						border: 0.025rem solid rgb(240, 115, 115);
+						border-radius: 0.1rem;
+						font-size: .4rem;
+						background-color: rgb(240, 115, 115);
+						display: inline-block;
+						margin-right:0.2rem;
+					}
+				}
+				.ellipsis{
+					width: 80%;
+				}
+				.icon-arrow-right{
+					margin-right: 0.2rem;
+				}
+			}
+		}
+	}
+	.shop-desc-container{
+		background-color: white;
+		margin-bottom: 0.3rem;
+		padding: 0 0.5rem;
+		.shop-desc-list{
+			li{
+				border-bottom: 1px solid #eee;
+				line-height: 2;
+				font-size: 1rem;
+				display: flex;
+				flex-flow: row nowrap;
+				justify-content: space-between;
+				.left{
+					width: 20%
+				}
+				.right{
+					width: 80%;
+					text-align: right;
+					font-size: 0.8rem;
+					color: #999;
+				}
+			}
+		}
+		.title{
+			font-size: 1rem;
+			line-height: 2;
+			font-weight: bold;
+		}
+		.shop-desc{
+			font-size: 0.9rem;
+			color: #999;
+			padding-bottom: 0.3rem;
+		}
+		.shop-service-tips{
+			font-size: 0.8rem;
+			color: #999;
+			line-height: 2;
+			img{
+				width: 32%;
+				margin: 0 2px;
+			}
+		}
+		.shop-img{
+			img{
+				width: 32%;
+				margin: 0 2px;
+			}
+		}
+	}
+	.accusation-btn{
+		display: block;
+		background-color: white;
+		line-height: 2.5;
+		text-align: center;
+		margin: 0 5px;
+		font-size: 1rem;
+	}
+}
+
+
+  

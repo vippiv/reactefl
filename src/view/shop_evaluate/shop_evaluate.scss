@@ -1,0 +1,77 @@
+@import '../../style/mixin.scss';
+
+.evaluate-container{
+	.filter-container{
+		margin: 0.3rem 0;
+		background-color: white;
+		padding: 0.5rem 0.8rem;
+		.evalute-btn{
+			background-color: rgba(5, 165, 243, 0.36);
+			padding: 0.5em 0.8em;
+			color: #1f1a1a;
+			border-radius: 0.3em;
+			margin-right: 0.3em;
+		}
+		.evalute-active{
+			color: black;
+			background-color: #2196f3;
+		}
+	}
+	.evalute-content{
+		li{
+			display: flex;
+			background-color: white;
+			border-bottom: 1px solid #eee;
+			padding: 0.8rem 0;
+			.avatar{
+				width: 20%;
+				padding: 0 0.5rem;
+				img{
+					max-width: 100%;
+					border-radius: 0.3em;
+				}
+			}
+			.detail{
+				width: 80%;
+				.username{
+					padding-right: 1rem;
+					.left{
+						float: left;
+					}
+					.right{
+						float: right;
+						color: #999;
+						font-size: 0.8rem;
+					}
+				}
+				.txt{
+					color: #999;
+					margin-bottom: 0.3rem;
+				}
+				.foodimg{
+					padding-right: 1rem;
+					img{
+						width: 32%;
+						margin-right: 0.1rem;
+					}
+				}
+				.rate{
+					font-size: 0.9rem;
+					color: orange;
+				}
+				.foodname{
+					font-size: 0.9rem;
+					border: 1px solid transparent;
+					margin: 0.2rem 0;
+					.tag{
+						background-color: rgba(3, 169, 244, 0.25);
+						border-radius: 0.3rem;
+						padding: 0.1rem 0.3rem;
+						color: #999;
+						font-size: 0.8rem
+					}
+				}
+			}
+		}
+	}
+}
