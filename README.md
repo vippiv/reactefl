@@ -40,9 +40,11 @@ react4 + react-redux + react-router + es6 + axios + sass + webpack
 │   ├── jest          
 │   │   ├── cssTransform.js
 │   │   └── fileTransform.js
+│   ├── getHttpsConfig.js
+│   ├── modules.js
 │   ├── paths.js
-│   ├── webpack.config.dev.js
-│   ├── webpack.config.prod.js
+│   ├── pnpTs.js
+│   ├── webpack.config.js
 │   └── webpackDevServer.config.js
 ├── package-lock.json
 ├── package.json    --------------------项目package.json
@@ -56,7 +58,12 @@ react4 + react-redux + react-router + es6 + axios + sass + webpack
 │   └── test.js
 ├── src           ----------------------源码目录
 │   ├── api       ----------------------API目录
-│   │   ├── api.js
+│   │   ├── auth.js
+│   │   ├── food.js
+│   │   ├── geo.js
+│   │   ├── mall.js
+│   │   ├── shop.js
+│   │   ├── user.js
 │   │   └── server.js
 │   ├── assets   -----------------------资源目录
 │   │   └── iconfont -------------------iconfont目录
@@ -70,14 +77,24 @@ react4 + react-redux + react-router + es6 + axios + sass + webpack
 │   │   ├── envconfig.js  --------------配置信息
 │   │   └── rem.js  --------------------自适应
 │   ├── index.js    --------------------入口
-│   ├── pages       --------------------页面目录
+│   ├── view       ---------------------页面目录
+│   │   ├── balance    -----------------用户余额
+│   │   ├── benefit    -----------------用户优惠券
+│   │   ├── mall    --------------------积分商城
+│   │   ├── member    ------------------会员卡
 │   │   ├── food    --------------------食物页面
+│   │   ├── order    -------------------订单 页面
+│   │   ├── points    ------------------用户积分
 │   │   ├── info   ---------------------个人信息页面
 │   │   ├── login  ---------------------登录页面
 │   │   ├── msite  ---------------------商店页面
 │   │   ├── profile --------------------主页页面
 │   │   ├── set_user -------------------用户信息设置页面
 │   │   ├── shop   ---------------------商店详情页面
+│   │   ├── shop_detail   --------------商店详情页面
+│   │   ├── shop_evaluate   ------------商店评价页面
+│   │   ├── service   ------------------服务中心
+│   │   ├── service_detail   -----------服务中心条款
 │   │   └── technology  ----------------技术栈页面
 │   ├── router   -----------------------路由
 │   │   └── index.js
@@ -87,12 +104,12 @@ react4 + react-redux + react-router + es6 + axios + sass + webpack
 │   │   └── user
 │   ├── style   ------------------------通用样式目录
 │   │   ├── base.scss
+│   │   ├── font.scss
 │   │   ├── mixin.scss
 │   │   └── swiper.min.css
 │   └── utils  ------------------------公用方法
 │       ├── asyncComponent.jsx  -------异步加载组件
 │       └── commons.js  ---------------公用方法
 ├── README.md      ----------------------README
-└── tree.md  --------------------------项目结构
 
 ```
