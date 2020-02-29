@@ -17,7 +17,7 @@ class Address extends Component {
     getAddress = () =>{
         fetchUserAddress().then(res => {
             this.props.saveAttrInfo('addressList', res.data)
-            // TODO 这里没有拿到数据
+            
             console.log(this.props.hasAddressList)
         })
     }

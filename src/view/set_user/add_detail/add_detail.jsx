@@ -4,7 +4,6 @@ import PropTypes from 'prop-types'
 import {saveAttrInfo} from '../../../store/action'
 import QueueAnim from 'rc-queue-anim'
 import './add_detail.scss'
-import API from '../../../api/api'
 
 class AddDetail extends Component {
   static propTypes = {
@@ -20,8 +19,6 @@ class AddDetail extends Component {
       type: 'nearby',
       keyword: this.state.inputAddress
     }
-    let res = await API.searchPois(obj)
-    this.props.saveAttrInfo('addressList', res)
   }
   handleChange = (e) => {
     let value = e.target.value

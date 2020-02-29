@@ -9,7 +9,6 @@ class Service extends Component {
 	goBack = () => {
         this.props.history.goBack()
     }
-    // TODO 无法跳转
 	render() {
 		return (
 			<div className="balance-container">
