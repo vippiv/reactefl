@@ -1,4 +1,4 @@
-## react-elm
+## react-efl
 
 ![](https://img.shields.io/badge/react-16.5.2-blue.svg)
 ![](https://img.shields.io/badge/react--redux-5.0.7-green.svg)![](https://img.shields.io/badge/react--router--dom-4.3.1-f1ddb4.svg)
@@ -7,33 +7,28 @@
 ![](https://img.shields.io/badge/webpack-4.19.1-003366.svg)
 ![](https://img.shields.io/badge/license-MIT-orange.svg)
 # 前言
-之前学习vue的时候, 就学习过`bailicangdu`大神的`vue2-elm`项目.最近在学习完react基础,想找一个实战项目来练手深入了解react, 就打算用react重写vue2-elm,后端数据还是用vue2-elm,实在没有经历撸后端(感谢bailicangdu).</br>
-该项目是饿了吗, 目前开发了登录、注册、购物车、商品展示、用户信息等,算一个比较完整的项目,这个项目比较复杂,这也是我选这个项目的原因
+react学习一直断断续续的，最近趁着超长假期做个项目，数据渲染方面用mock实现</br>
+该项目力求完整的实现外卖平台的功能, 目前开发了用户中心、商品展示、购物车、商家详情等,目前算是相对完整的了,细节优化后面有空再处理
 # 技术栈
 react4 + react-redux + react-router + es6 + axios + sass + webpack
 # 说明
 > 觉得对你有帮助,请点右上角的`Star`支持一下</br>
-> bailicangdu大神的项目地址[点这里](https://github.com/bailicangdu/vue2-elm)</br>
-> 推荐一下我的另一个项目“用console.log看vue源码” [点这里](https://github.com/liuyangjike/vue-console)
 
 # 项目运行
 `node >= 6.0`
 ```
-  git clone git@github.com:liuyangjike/react-elm.git
-  cd react-elm
+  git clone https://github.com/vippiv/reactefl.git
+  cd reactefl
   npm install 或用 cnpm
   npm run start
 ```
 # 演示
-[demo](http://www.jikeliu.top)
-> 请用Chrome调试的手机模式查看
+> 拉下来install后即可查看
 
 
 # 截图
-<img src="https://s1.ax1x.com/2018/11/06/iofdjU.png" width="325" height="620"/> &#160;&#160;<img src="https://s1.ax1x.com/2018/11/06/iof1BQ.png" width="325" height="620"/>
-<img src="https://s1.ax1x.com/2018/11/06/iof0uF.png" width="325" height="620"/> &#160;&#160;<img src="https://s1.ax1x.com/2018/11/06/iooQTe.png" width="325" height="620"/>
-<img src="https://s1.ax1x.com/2018/11/06/iofBB4.png" width="325" height="620"/> &#160;&#160;<img src="https://s1.ax1x.com/2018/11/06/io5MjK.gif" width="325" height="620"/>
-<img src="https://s1.ax1x.com/2018/11/06/io50u8.gif" width="325" height="620"/> &#160;&#160;<img src="https://s1.ax1x.com/2018/11/06/io5djf.gif" width="325" height="620"/>
+<img src="https://img2018.cnblogs.com/blog/728807/202002/728807-20200229114047095-1658110844.gif" width="325" height="620"/> &#160;&#160;<img src="https://img2018.cnblogs.com/blog/728807/202002/728807-20200229114058158-649478288.gif" width="325" height="620"/>
+<img src="https://img2018.cnblogs.com/blog/728807/202002/728807-20200229114107028-709943006.gif" width="325" height="620"/> &#160;&#160;<img src="https://img2018.cnblogs.com/blog/728807/202002/728807-20200229114114528-526893386.gif" width="325" height="620"/>
 
 # 项目结构
 ```javascript
