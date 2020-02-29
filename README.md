@@ -1,10 +1,10 @@
 ## react-efl
 
-![](https://img.shields.io/badge/react-16.5.2-blue.svg)
-![](https://img.shields.io/badge/react--redux-5.0.7-green.svg)![](https://img.shields.io/badge/react--router--dom-4.3.1-f1ddb4.svg)
-![](https://img.shields.io/badge/axios-0.18.0-ff69b4.svg)
-![](https://img.shields.io/badge/swiper-4.4.1-yellow.svg)
-![](https://img.shields.io/badge/webpack-4.19.1-003366.svg)
+![](https://img.shields.io/badge/react-16.12.0-blue.svg)
+![](https://img.shields.io/badge/react--redux-7.2.0-green.svg)![](https://img.shields.io/badge/react--router--dom-5.1.2-f1ddb4.svg)
+![](https://img.shields.io/badge/axios-0.19.2-ff69b4.svg)
+![](https://img.shields.io/badge/swiper-5.3.1-yellow.svg)
+![](https://img.shields.io/badge/webpack-4.41.5-003366.svg)
 ![](https://img.shields.io/badge/license-MIT-orange.svg)
 # 前言
 react学习一直断断续续的，最近趁着超长假期做个项目，数据渲染方面用mock实现</br>
